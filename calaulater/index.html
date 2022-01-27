@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Calculater </title>
+    <link rel = "stylesheet" type = "text/css" href = "index.css">
+</head>
+<body>
+    <div id="app">
+        <div class="calculator">
+            <input type="text" id="total" name="output" readonly>
+            <div class="digits flex">
+                <button class="digit" value="9" onclick="total.value+='9'">9</button> 
+                <button class="digit" value="8" onclick="total.value+='8'">8</button>
+                <button class="digit" value="7" onclick="total.value+='7'">7</button>
+                <button class="digit" value="6" onclick="total.value+='6'">6</button>
+                <button class="digit" value="5" onclick="total.value+='5'">5</button>
+                <button class="digit" value="4" onclick="total.value+='4'">4</button>
+                <button class="digit" value="3" onclick="total.value+='3'">3</button>
+                <button class="digit" value="2" onclick="total.value+='2'">2</button>
+                <button class="digit" value="1" onclick="total.value+='1'">1</button>
+                <button class="digit" value="0" onclick="total.value+='0'">0</button>
+            </div>
+            <div class="modifiers subgrid">
+                <button class="modifier" value="" onclick="total.value=''">AC</button>
+            </div>
+            <div class="operations subgrid">
+                <button class="operation" value="/" onclick="total.value +='/'">/</button>
+                <button class="operation" value="*" onclick="total.value +='*'">X</button>
+                <button class="operation" value="-" onclick="total.value +='-'">-</button>
+                <button class="operation" value="+" onclick="total.value +='+'">+</button>
+                <button class="operation" value="=" onclick="total.value = eval(total.value)">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculater.js"></script>
+</html>
+
